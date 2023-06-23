@@ -1,6 +1,5 @@
-# Bluestamp tabletop Robot
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
-
+# Bluestamp wandering tabletop Robot
+During this project, I built a robot in which has the ability to wander on its own and avoid obsticales such as the edge of table tops. Using the Arduino uno, which is a programable board that sends signals via digital pins, I coded the rover to acknowledge the obstacles and then perform a series of movements in order to avoid the obstacles.
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | FirstName LastInitialOnly | School Name | Electrical Engineering | Incoming Senior
