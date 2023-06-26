@@ -1,4 +1,4 @@
-# Bluestamp wandering tabletop Robot
+# Bluestamp wandering tabletop Rover
 During this project, I built a robot in which has the ability to wander on its own and avoid obsticales such as the edge of table tops. Using the Arduino uno, which is a programable board that sends signals via digital pins, I coded the rover to acknowledge the obstacles and then perform a series of movements in order to avoid the obstacles.
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
