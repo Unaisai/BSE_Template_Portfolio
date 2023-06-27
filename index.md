@@ -41,17 +41,95 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```c++
-void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
+onst int in1 = 3;
+const int in2 = 4;
+const int in3 = 11;
+const int in4 = 12;
+const int ir = 2;
+const int rightIR = 6;
+const int leftIR = 7;
+
+void setup(){
+  pinMode(3, OUTPUT); // 3 and 4: right motor
+  pinMode(4, OUTPUT);
+  pinMode(11, OUTPUT); // 11 and 12: left motor
+  pinMode(12, OUTPUT);
+	pinMode(2, INPUT); // ir sensor
+  pinMode(6, INPUT); // right IR
+  pinMode(7, INPUT); // left IR
+	pinMode(13, OUTPUT); // status led
+  
+
+Serial.begin(9600);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop(){
+	int sensorValue = digitalRead(2);
+  int RsensorValue = digitalRead(6);
+  int LsensorValue = digitalRead(7);
 
+Serial.println(RsensorValue);
+if (sensorValue == 1){
+//off the table
+  digitalWrite (13, LOW);
 }
-```
+if (sensorValue == 0) {
+	//on the table 
+	digitalWrite (13 , HIGH);
+}
+while (sensorValue == 1)
+{
+  moveBackward();
+  if (RsensorValue);
+  stopMove();
+  delay(500);
+  if (LsensorValue);
+  stopMove();
+  delay(500);
+}
+while (RsensorValue == 1)
+{
+  moveForward();
+  delay(400);
+  stopMove();
+  delay(200);
+}
+while (LsensorValue == 1)
+  moveForward();
+  delay(400);
+loop();
+ if (sensorValue == 1)
+  stopMove();
+  delay(200);
+}
+
+void moveBackward() {
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
+}
+
+void stopMove() {
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, LOW);
+}
+
+void turnLeft() {
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
+}
+
+void moveForward()  {
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+  digitalWrite(in3, HIGH);
+  digitalWrite(in4, LOW);
+}
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
