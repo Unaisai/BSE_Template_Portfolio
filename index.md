@@ -1,8 +1,8 @@
 # Bluestamp wandering table-top Rover
-During this project, I built a rover in which has the ability to wander on its own and avoid obsticales such as the edge of table tops. Using the Arduino Uno, which is a programable board that sends signals via digital pins. I coded the rover to acknowledge the obstacles and then perform a series of movements in order to avoid the obstacles.
+During this project, I built a rover in which has the ability to wander on its own and avoid obsticales such as the edge of table tops. Using the Arduino Uno, which is a programable board that sends signals via digital pins. I coded the rover to acknowledge the obstacles and then perform a series of movements in order to avoid the obstacles. This project made me become extremely focussed on the technicallities of what makes a rover function. This includes both hardware and wiring, and code.
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Unai C. Z. | School Name | Electrical Engineering | Incoming Senior
+| Unai C. Z. | Fiorello H. Laguardia HS | Electrical Engineering | Incoming Senior
 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
@@ -26,7 +26,7 @@ During my second Milestone, I had some drawbacks of motors not working and then 
 
 # First Milestone
 During my first Milestone, I started by putting together the parts so that they can be in places that had utility for later code and programs.
-In order to test the hardware, I used a test program to run the motors in all directions to make sure that everything is hooked up correctly.
+In order to test the hardware, I used a test program to run the motors in all directions to make sure that everything is hooked up correctly. however I began to have some issues when the motors didn't work in unisen. While troubleshooting,iI learned how to hot wire my rover in order to isolate the problem. I started by manually putting the rover into forward and backward
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=GgeViYFkuSQ&list=PLe-u_DjFx7esyGQXsR2Gd7iuHZbkNE11n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
