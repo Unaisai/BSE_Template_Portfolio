@@ -10,7 +10,8 @@ During this project, I built a rover in which has the ability to wander on its o
 # Second Milestone
 During my second Milestone, I had some drawbacks of motors not working and then revisting and revising my code in order to get the correct functionality out of my code. I eventually got the Rover to work correctly after switching the electrical pins on the arduino and rewriting to the code to match exactly what I had rewired on the Arduino. This lead me to be able to write code in order for my rover to recognize the edge of a table using a digital signal sent from the IR sensors, and then react by backing up and turning around. This was a huge step during the project, because recognizing the edge of a table is the first step when making a rover that can avoid certain obstacles. 
 
-# Code
+# Code 
+```
 const int in1 = 3;
 const int in2 = 4;
 const int in3 = 11;
@@ -72,7 +73,7 @@ if (LsensorValue == 1)
   delay(400);
 }
 }
-
+```
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IWtPTOME1gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -81,12 +82,14 @@ During my first Milestone, I started by putting together the parts so that they 
 In order to test the hardware, I used a test program to run the motors in all directions to make sure that everything is hooked up correctly. however I began to have some issues when the motors didn't work in unisen. While troubleshooting,I learned how to hot wire my rover in order to isolate the problem. I started by manually putting the rover into the Forward and Backward modes by wiring the motors to have the sequence of:
 
 # Code
+```
 void moveForward()  {
   digitalWrite(in1, LOW);
   digitalWrite(in2, HIGH);
   digitalWrite(in3, HIGH);
   digitalWrite(in4, LOW);
 }
+```
 
 By hot wiring the rover to move forward, it isolates the problem because the Rover was able to move forward without the help of the Arduino.
 
@@ -98,7 +101,7 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 # Bill of Materials
 | **Parts** | **Note** | **Price** | **Link** |
 
-|Sunfounder 3 in 1 learning kit | starter Arduino learning kit |$102.99 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+|Sunfounder 3 in 1 learning kit | starter Arduino learning kit |$69.99 | <a href="https://www.sunfounder.com/products/sunfounder-3-in-1-iot-smart-car-learning-ultimate-starter-kit"> Link </a> |
 
 # Other Resources/Examples
 
