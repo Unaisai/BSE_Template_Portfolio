@@ -8,7 +8,34 @@ During this project, I built a rover in which has the ability to wander on its o
 ![Headstone Image](IMG_2812.jpg)
   
 # Final Milestone
+For my Final Milestone, I worked on adding some more functionality out of my Rover. To do this, I added an UltraSonic sensor which has the ability to back away from walls. An Ultrasonic sensor essentially measures distance by sending a signal and then timing how long it takes to recieve back the signal. Based on this information, the Rover can tell how far away an obstacle is. 
 
+# Code
+```
+void loop() {
+float distance = readSensorData();
+  if (distance > 10)  {
+  moveForward();
+  delay(random(0, 1000));
+  }
+else if (distance < 10 && distance > 2) {
+  moveBackward();
+  delay(random(0, 1000));
+} else {
+  moveForward();
+}
+}
+
+float readSensorData()  {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  float distance = pulseIn(echoPin, HIGH) / 58.00; //Equivalent to (340m/s*1us)/2
+  return distance;
+}
+```
 
 # Second Milestone
 During my second Milestone, I had some drawbacks of motors not working and then revisting and revising my code in order to get the correct functionality out of my code. I eventually got the Rover to work correctly after switching the electrical pins on the arduino and rewriting to the code to match exactly what I had rewired on the Arduino. This lead me to be able to write code in order for my rover to recognize the edge of a table using a digital signal sent from the IR sensors, and then react by backing up and turning around. This was a huge step during the project, because recognizing the edge of a table is the first step when making a rover that can avoid certain obstacles. 
