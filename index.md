@@ -1,5 +1,8 @@
 # Bluestamp wandering table-top Rover
 During this project, I built a rover in which has the ability to wander on its own and avoid obsticales such as the edge of table tops. Using the Arduino Uno, which is a programable board that sends signals via digital pins. I coded the rover to acknowledge the obstacles and then perform a series of movements in order to avoid the obstacles. This project made me become extremely focussed on the technicallities of what makes a rover function. This includes both hardware, and code.
+
+| **Engineer** | **School** | **Area of Interest** | **Grade** |
+|:--:|:--:|:--:|:--:|
 | Unai C. Z. | Fiorello H. Laguardia HS | Electrical Engineering | Incoming senior
 
 ![Headstone Image](IMG_2748.JPG)
@@ -99,8 +102,9 @@ By hot wiring the rover to move forward, it isolates the problem because the Rov
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Bill of Materials
-| **Parts** | **Note** | **Price** | **Link** |
 
+| **Part** | **Note** | **Price** | **Link** |
+|:--:|:--:|:--:|:--:|
 |Sunfounder 3 in 1 learning kit | starter Arduino learning kit |$69.99 | <a href="https://www.sunfounder.com/products/sunfounder-3-in-1-iot-smart-car-learning-ultimate-starter-kit"> Link </a> |
 
 # Other Resources/Examples
