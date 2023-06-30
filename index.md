@@ -109,6 +109,6 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 
 # Other Resources/Examples
 
-- [Example 1](https://docs.sunfounder.com/projects/3in1-kit/en/latest/components/component_list.html)
-- [Example 2](https://www.arduino.cc/reference/en/)
+- [Sunfounder documentation](https://docs.sunfounder.com/projects/3in1-kit/en/latest/components/component_list.html)
+- [Arduino Reference Code](https://www.arduino.cc/reference/en/)
 
