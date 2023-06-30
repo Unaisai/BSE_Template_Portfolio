@@ -5,7 +5,7 @@ During this project, I built a rover in which has the ability to wander on its o
 |:--:|:--:|:--:|:--:|
 | Unai C. Z. | Fiorello H. Laguardia HS | Electrical Engineering | Incoming senior
 
-![Headstone Image](IMG_2748.JPG)
+![Headstone Image](IMG_2812.jpg)
   
 # Final Milestone
 
@@ -83,6 +83,8 @@ if (LsensorValue == 1)
 # First Milestone
 During my first Milestone, I started by putting together the parts so that they can be in places that had utility for later code and programs.
 In order to test the hardware, I used a test program to run the motors in all directions to make sure that everything is hooked up correctly. however I began to have some issues when the motors didn't work in unisen. While troubleshooting,I learned how to hot wire my rover in order to isolate the problem. I started by manually putting the rover into the Forward and Backward modes by wiring the motors to have the sequence of:
+
+![Headstone Image](IMG_2748.JPG)
 
 # Code
 ```
