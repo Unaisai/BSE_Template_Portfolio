@@ -100,6 +100,7 @@ By hot wiring the rover to move forward, it isolates the problem because the Rov
 
 # Schematics 
 
+![Headstone Image](IMG_2748.JPG)
 
 # Bill of Materials
 
